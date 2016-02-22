@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Trouble Busters!</title>
+    <meta name="description" content="A platform for hosting LLSIF Giveaways">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+    <script src="js/sweet-alert.min.js"></script>
+
+    <script type="text/javascript" src="js/action.js"></script>
+</head>
+
+<body>
+<img id="cover-photo" src="" alt="Not seeing our awesome cover? Log out and then log into Facebook again!">
+<ul id="tabs">
+    <li class="active">Home</li>
+    <li>Claim</li>
+    <li>Submit</li>
+    <li>Giveaways</li>
+    <li>Members</li>
+    <li>Other</li>
+</ul>
+
+<div id="main">
+
+    <ul id="tab">
+        <li class="active">
+            <h1>Trouble Busters!</h1>
+
+            <p id="top">First time user? Click "Other" for quick information and a brief example on how this works!</p>
+
+            <p id="status"></p>
+
+            <p>Log: <span id="log">Nothing here yet.</span></p>
+            <button id="login" type="button">Log in using Facebook</button>
+            <p>Your identification: <span id="level"></span><span id="fb-name"></span></p>
+            <br>
+        </li>
+        <li>
+            Log: <span class="logs">Nothing here yet.</span><br>
+
+            <h3>Claim a Giveaway</h3>
+
+            <p>
+                Giveaway ID: <input id="claim-code" class="claim-giveaway" type="text" name="code" value=""><br>
+                <button class="claim-giveaway" type="button" value="submit">Claim this giveaway</button>
+            </p>
+        </li>
+        <li>
+            Log: <span class="logs">Nothing here yet.</span><br>
+
+            <h3>Submit a Giveaway (Contributor-only)</h3>
+
+            <p>
+                Code: <input id="new-code" class="new-giveaway" type="text" name="code" value=""><br>
+                <button class="new-giveaway" type="button" value="submit">Submit a new giveaway</button>
+            </p>
+        </li>
+        <li>
+            <p>Log: <span class="logs">Nothing here yet.</span></p>
+
+            <h3>View Giveaways (Contributor-only)</h3>
+
+            <p>
+                <button id="claimed" class="view-giveaway" type="button" value="submit">Claimed</button>
+                <button id="unclaimed" class="view-giveaway" type="button" value="submit">Unclaimed</button>
+            </p>
+            <div class="table-holder">
+                <table id="entryTable" class="data-table"></table>
+            </div>
+        </li>
+        <li>
+            <p>Log: <span class="logs">Nothing here yet.</span></p>
+
+            <h3>Search Members (Moderator-only)</h3>
+            Name: <input id="member-name" class="view-member" type="text" name="name"> (leave empty for all members)<br>
+            <button id="list-members" class="view-member" type="button" value="submit">Members</button>
+            <div class="table-holder">
+                <table id="userTable" class="data-table"></table>
+            </div>
+        </li>
+        <li>
+            <!--<h3>Change Cover (Moderator-only)</h3>-->
+            <!--URL: <input id="cover-file" class="cover-change" type="file" name="name"><br>-->
+            <!--<button id="submit-cover" class="cover-change" type="button" value="submit">Update</button><br>-->
+
+            <div class="tutorial">
+                <h3 id="guide">Quick Guide</h3>
+                <ol type="1">
+                    <li>You have to be a member of <b>Love Live! School Idol Festival - Trading & Giveaway Group</b> in
+                        order to
+                        use this application at all.<br></li>
+                    <li>If your identification is <b>not logged in</b>, click on <b>Log in using Facebook</b> to obtain
+                        your usage right to the app.
+                    </li>
+                    <li>Click on your name to see more information about yourself in the profile page.</li>
+                    <li><b>To claim a giveaway:</b> Enter the Giveaway ID given to you by the person who post that
+                        giveaway.
+                    </li>
+                    <li>Only "Contributor" account can submit new giveaways and view their submitted giveaways. Contact
+                        an Admin to become one.
+                    </li>
+                    <li><b>It is strongly recommended that you post your giveaway ID to the group instantly after a
+                        submission.</b> You shouldn't rely on this app as your sole method of storing transfer codes.
+                    </li>
+                    <li>When your giveaway is "claimed", please be so kind as to announce so on your Facebook's post, so
+                        that others won't have to try claiming it again.
+                    </li>
+                    <li>Contact me if any problem arises.</li>
+                    <li>Remember your vow,
+                        <small>to go against Linus is to go against μ's.</small>
+                    </li>
+                </ol>
+
+                <h3 id="guide-example">Example of a giveaway</h3>
+                <ol type="1">
+                    <li>I wanna make a giveaway of UR Potato.</li>
+                    <li>I put the code of the UR Potato Account in the submission.</li>
+                    <li>I receive a randomly generated code (called giveaway ID).</li>
+                    <li>I post the randomly generated code (giveaway ID) in a Facebook post.</li>
+                    <li>Someone claims it.</li>
+                    <li>He receive the UR Potato Account code.</li>
+                    <li>The name will be recorded.</li>
+                    <li>Everyone happy.</li>
+                </ol>
+            </div>
+        </li>
+    </ul>
+
+    <!--<table id="dataTable"></table>-->
+
+    <p><i>Developed by Rin-chan with help from Kayo-chin.</i></p>
+</div>
+</body>
+
+</html>

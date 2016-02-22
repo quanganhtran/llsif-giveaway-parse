@@ -1,0 +1,99 @@
+body {
+    background: #eee;
+    background-image: url("../img/main_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 0 25px;
+    overflow-y: scroll;
+}
+
+#main {
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 50px 60px;
+    border: solid #ddd;
+    border-width: 0 1px 1px 1px;
+}
+
+#main h1 {
+    margin-top: 0;
+    font-size: 35px;
+}
+
+#main ul {
+    padding-left: 20px;
+}
+
+#main .error {
+    border: 1px solid red;
+    background: #FDEFF0;
+    padding: 20px;
+}
+
+#main .success {
+    margin-top: 25px;
+}
+
+#main .success code {
+    font-size: 12px;
+    color: green;
+    line-height: 13px;
+}
+
+div.table-holder {
+    overflow: auto;
+    max-height: 135px;
+}
+
+.data-table {
+    border: solid #000000;
+    width: 1000px;
+}
+
+.data-table td {
+    border: solid #000000;
+    background: white;
+}
+
+.tutorial {
+    overflow: auto;
+    max-height: 250px;
+}
+
+/* Next part is experimental */
+
+ul#tabs {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+ul#tabs li {
+    display: inline-block;
+    background-color: #32c896;
+    border-bottom: solid 5px #238b68;
+    padding: 5px 20px;
+    margin-bottom: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+ul#tabs li:hover {
+    background-color: #238b68;
+}
+ul#tabs li.active {
+    background-color: #238b68;
+}
+ul#tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul#tab > li {
+    display: none;
+}
+ul#tab > li.active {
+    display: block;
+}

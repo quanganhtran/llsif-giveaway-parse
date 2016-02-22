@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Trouble Busters! - User Page</title>
+    <meta name="description" content="Page for users' information.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/sweet-alert.css">
+    <script src="../js/sweet-alert.min.js"></script>
+    <script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+
+<div id="main">
+
+    <p id="status"></p>
+    <p>Log: <span id="log">This is the <span class="user-name"></span>'s profile.</span></p>
+
+    <p>User profile<br>
+        ID: <span id="user-id"></span><br>
+        Username: <span class="user-name"></span><br>
+        Role: <span id="user-role"></span>
+    </p>
+
+    <p>Administrative actions<br>
+        <select id="assign-role" class="admin-action">
+            <option value="" selected>Select an action...</option>
+            <option value="member">Revoke this user's special privileges</option>
+            <option value="contributor">List or dismiss this user as a contributor</option>
+            <option value="moderator">List or dismiss this user as a moderator</option>
+        </select>
+        <button id="confirm-assign" class="admin-action" type="button">Confirm</button>
+    </p>
+
+    <a href="../">Back to main page.</a>
+</div>
+</body>
+</html>
